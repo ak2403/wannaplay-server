@@ -1,0 +1,51 @@
+{
+  "name": "TeamUp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "engines": {
+    "node": "4.1.1"
+  },
+  "scripts": {
+    "client": "npm run start --prefix src",
+    "Styles": "npm run styles --prefix src",
+    "server": "nodemon index.js --exec babel-node --presets babel-preset-env",
+    "start": "concurrently \"npm run server\" \"npm run client\" \"npm run Styles\""
+  },
+  "keywords": [],
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "concurrently": "^3.5.1",
+    "css-loader": "0.23.1",
+    "elasticsearch": "^15.0.0",
+    "node-sass": "^4.9.0",
+    "nodemon": "^1.12.1",
+    "style-loader": "0.13.0",
+    "webpack": "^3.8.1",
+    "webpack-dev-middleware": "^1.12.1"
+  },
+  "dependencies": {
+    "babel-preset-env": "^1.7.0",
+    "body-parser": "^1.18.2",
+    "classnames": "^2.2.5",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "jsonwebtoken": "^8.1.0",
+    "lodash": "^4.17.4",
+    "mongoose": "^4.13.5",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
+    "semantic-ui-css": "^2.2.12",
+    "semantic-ui-react": "^0.77.0",
+    "shortid": "^2.2.8",
+    "validator": "^9.1.2"
+  }
+}
