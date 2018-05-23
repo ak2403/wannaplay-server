@@ -8,8 +8,8 @@
   "scripts": {
     "client": "npm run start --prefix src",
     "Styles": "npm run styles --prefix src",
-    "server": "nodemon index.js --exec babel-node --presets babel-preset-env",
-    "start": "concurrently \"npm run server\" \"npm run client\" \"npm run Styles\""
+    "start-dev": "concurrently \"npm run server\" \"npm run client\" \"npm run Styles\"",
+    "start": "nodemon index.js --exec babel-node --presets babel-preset-env"
   },
   "keywords": [],
   "devDependencies": {
